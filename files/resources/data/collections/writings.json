@@ -1,0 +1,68 @@
+[
+    {
+        "title": "The first ten minutes",
+        "slug": "the-first-ten-minutes",
+        "link": "/writing/the-first-ten-minutes",
+        "category": "Practice",
+        "date": "2026-02-11",
+        "dateFormatted": "11 February 2026",
+        "readTime": "4 min",
+        "excerpt": "Most of what goes wrong in a project was decided before anyone opened a design file. Usually in the first conversation, usually by nobody in particular.",
+        "content": "<p>I have started recording the first call of every project, with permission, and listening to it again at the end. It is an uncomfortable habit and I recommend it. Almost every problem that showed up in week eight is audible in minute four.</p><p>Not as a warning. As an aside. Someone says <em>we will probably need to run this past the board</em> and the conversation moves on, and eleven weeks later the board has opinions about the typeface.</p><h2>The things that get skipped</h2><p>There is a short list of questions that feel too blunt to ask early, which is exactly why they belong early. Who signs this off. What happens if they hate it. What has already been tried. What are you not allowed to change.</p><p>That last one is the most useful question I know. Every organisation has a set of untouchable things, and none of them are written down. The name. A colour someone's predecessor chose. A layout the founder drew. You will find them eventually — the question is whether you find them in week one or in the presentation.</p><h2>Writing it down changes it</h2><p>After the call I send back one page: what I think the problem is, what I think success looks like, and what I heard as fixed. Not a proposal. A summary.</p><p>About a third of the time someone replies to correct me, and the correction is the most valuable email of the project. The other two thirds reply <em>yes, that is it</em>, and now there is a shared sentence to point at when the work drifts.</p><h2>The cost of skipping it</h2><p>Ten minutes of blunt questions at the start, against three weeks of redesign in the middle. I have run it both ways enough times to stop treating it as a preference.</p>"
+    },
+    {
+        "title": "Against the mood board",
+        "slug": "against-the-mood-board",
+        "link": "/writing/against-the-mood-board",
+        "category": "Process",
+        "date": "2026-01-19",
+        "dateFormatted": "19 January 2026",
+        "readTime": "5 min",
+        "excerpt": "A wall of other people's finished work is a great way to agree on a feeling and a terrible way to agree on a decision.",
+        "content": "<p>Everyone in the room likes the mood board. That is the problem with it.</p><p>A grid of twenty beautiful images lets each person project a different project onto the same surface. The founder is looking at the photography. The marketing lead is looking at the type. You are looking at the spacing. Everybody nods, and everybody leaves with a different brief.</p><h2>Agreement without commitment</h2><p>The mood board asks for a reaction, not a decision. Nobody can be wrong about liking an image. So it produces the easiest kind of consensus — the kind that evaporates the moment real work is put in front of it, because now there is something specific to disagree with.</p><blockquote>If the approval was free, it was not an approval.</blockquote><h2>What I do instead</h2><p>Three or four sentences, written, describing what the thing should feel like and — more usefully — what it should never do. Then one real artefact: an actual page, at actual size, with actual copy.</p><p>Sentences are harder to nod along to. <em>It should feel closer to a public library than a boutique</em> is a claim somebody can argue with, and if they do, that argument was going to happen anyway. Better now, on a sentence, than in six weeks on a layout.</p><h2>The exception</h2><p>Mood boards are genuinely useful in one direction: as a record of what has been rejected. A wall of things we agreed we are not doing, with a line about why, is worth keeping. It is the only version I still make.</p>"
+    },
+    {
+        "title": "Three options is a way of not deciding",
+        "slug": "three-options",
+        "link": "/writing/three-options",
+        "category": "Practice",
+        "date": "2025-12-02",
+        "dateFormatted": "2 December 2025",
+        "readTime": "4 min",
+        "excerpt": "Presenting a safe one, a wild one and the one you want is a well-known trick. Clients know it too, which is most of the trouble with it.",
+        "content": "<p>I presented three directions for about eight years. Then a client asked me which one I would pick, I told her, and she said: so why did you show me the other two.</p><p>I did not have an answer that survived saying out loud.</p><h2>What three options actually is</h2><p>It is insurance. If the good one lands badly, there are two more in the room and the meeting does not end in silence. That is a real fear and it is worth naming honestly, because it is the whole reason the format persists.</p><p>The cost is that it moves the decision to the person least equipped to make it. Choosing between three directions is a design judgement. Handing it to the client is not collaboration; it is a transfer of risk dressed as respect.</p><h2>One direction, with the reasoning attached</h2><p>Now I bring one, and I bring the argument for it: what I heard, what I ruled out, and why this answers it. The rejected work is in the appendix, briefly, so nobody thinks it was not considered.</p><p>The conversations are harder and much shorter. When someone disagrees they disagree with a reason, which is a thing you can actually work with. <em>I prefer the second one</em> is not.</p><h2>When it goes wrong</h2><p>Occasionally the one direction is wrong and there is nothing to fall back on. That happens. It has cost me about a week each time, which is less than the month I used to spend making two directions I did not believe in.</p>"
+    },
+    {
+        "title": "What a logo is actually for",
+        "slug": "what-a-logo-is-for",
+        "link": "/writing/what-a-logo-is-for",
+        "category": "Identity",
+        "date": "2025-10-21",
+        "dateFormatted": "21 October 2025",
+        "readTime": "6 min",
+        "excerpt": "Not to express your values. To be recognised at a glance, at a bad angle, in poor light, by someone who is not looking for it.",
+        "content": "<p>The brief usually says the mark should communicate innovation, trust, and warmth. No mark has ever done this. A shape cannot say innovation. What it can do is become the thing people recognise as you, after which they will attach whatever you actually turn out to be.</p><h2>Recognition is the whole job</h2><p>Everything that matters about a mark falls out of that. It has to be distinct from its neighbours, stable across sizes, and legible at speed. Those are testable properties, unlike warmth.</p><p>So I test them. Print the candidates at 8mm and pin them across the room. Look at them out of focus. Show someone for one second and ask what they saw. Most directions die in that test, and they die cheaply, which is the point.</p><h2>Design for the worst reproduction</h2><p>The mark will be embroidered badly. It will be faxed — yes, still. It will be a favicon at 16 pixels, a stamp in wet ink, a sticker applied crookedly. Design for the worst of these and the good cases handle themselves.</p><blockquote>Fine detail is a promise you are making about every future print run.</blockquote><h2>The parts nobody looks at</h2><p>The mark is maybe a tenth of an identity. The rest is the typeface, the spacing, the way photographs are cropped, the tone of a shipping confirmation. That is what people are actually recognising by month three.</p><p>Which is a relief. It means the mark does not have to carry a meaning it was never able to carry — it only has to be unmistakable, and then get out of the way.</p>"
+    },
+    {
+        "title": "Designing the bad day",
+        "slug": "designing-the-bad-day",
+        "link": "/writing/designing-the-bad-day",
+        "category": "Product",
+        "date": "2025-09-08",
+        "dateFormatted": "8 September 2025",
+        "readTime": "5 min",
+        "excerpt": "Product design mostly draws the state where everything worked. People remember the other one.",
+        "content": "<p>Open any design file and count the screens. The full inbox, the healthy balance, the completed order. Now count the empty states, the failures, the halfway-through-and-interrupted states. In most files the ratio is embarrassing.</p><p>It is not laziness. The good state is the one you can show in a review. Nobody has ever been praised in a design critique for the payment-declined screen.</p><h2>The states that get remembered</h2><p>Ask someone about an app they dislike and they will describe a failure. The upload that vanished. The error that said something went wrong and nothing else. The form that cleared itself.</p><p>Nobody describes the happy path, because the happy path is invisible when it works. All of the memorable surface area is in the failures, and almost none of the design attention is.</p><h2>Draw them first</h2><p>I have started with the error and empty states for a couple of years now. It feels backwards for about a day and then it stops feeling like anything. Two things happen.</p><p>First, the good state gets simpler, because you already know what has to be recoverable. Second, you find the missing product decisions early — every honest error message needs someone to have decided what actually happens next, and that decision is usually nobody's.</p><h2>Say what happened, then what to do</h2><p>An error has two jobs and they go in one order. What happened, in the reader's words, not the system's. Then the next action, as a thing they can press.</p><p>No apologies, no cheerful tone, no red. Someone whose payment just failed is not having a light moment, and a friendly exclamation mark reads as though the product is not taking it seriously either.</p>"
+    },
+    {
+        "title": "Notes on saying no",
+        "slug": "notes-on-saying-no",
+        "link": "/writing/notes-on-saying-no",
+        "category": "Practice",
+        "date": "2025-08-14",
+        "dateFormatted": "14 August 2025",
+        "readTime": "3 min",
+        "excerpt": "Running one project at a time is a scheduling decision that turns out to be a quality decision.",
+        "content": "<p>The first two years on my own I ran three projects at once, because three felt like the responsible number and because turning down work when you have no pipeline is a nerve I did not have.</p><p>The work was fine. All of it was fine. None of it was the reason anyone hired me.</p><h2>What overlap costs</h2><p>Two projects do not take twice as long as one. They take about two and a half times, and the extra half is spent reloading context — remembering where a decision came from, re-reading your own notes, rebuilding an argument you had already made once.</p><p>Worse, the reloading tax lands hardest on the part of the work that needs continuity: the long, unglamorous middle where a direction turns into a system. That is precisely the stretch that gets sacrificed when something else is on fire.</p><h2>One at a time</h2><p>Now it is one project, start to finish, with a queue and honest dates. Clients wait longer to start and the work arrives sooner, which sounds like a paradox for about a week.</p><h2>How to say it</h2><p>Quickly, and with a date. <em>I am not free until March. If that works, I will hold it for you; if not, here are two people I would trust with this.</em></p><p>Nobody has ever been annoyed by that. Several have waited. The only version people mind is the slow no, which is why I answer within two days even when the answer is no.</p>"
+    }
+]

@@ -1,0 +1,8 @@
+# The visual editor's contract for sections/post-body.blade.php.
+title: Post body
+description: The written piece
+fields:
+    content:
+        type: richtext
+        label: Body
+        default: ""

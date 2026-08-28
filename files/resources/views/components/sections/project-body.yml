@@ -1,0 +1,37 @@
+# The visual editor's contract for sections/project-body.blade.php.
+# On /project/{slug} every value comes from the matched entry in
+# resources/data/collections/projects.json — edit it there.
+title: Project body
+description: The facts rail, the written case study, and the client quote
+fields:
+    role:
+        type: text
+        label: Role
+        default: ""
+    duration:
+        type: text
+        label: Duration
+        default: ""
+    year:
+        type: text
+        label: Year
+        default: ""
+    outcome:
+        type: textarea
+        label: Outcome
+        rows: 3
+        default: ""
+    quote:
+        type: textarea
+        label: Quote
+        description: Leave empty to hide the quote block.
+        rows: 3
+        default: ""
+    quoteAuthor:
+        type: text
+        label: Quote attribution
+        default: ""
+    content:
+        type: richtext
+        label: Case study
+        default: ""

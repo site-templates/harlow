@@ -1,0 +1,20 @@
+# The visual editor's contract for sections/page-header.blade.php.
+# Shared by every page that is not the home page.
+title: Page header
+description: The title block at the top of an inner page
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Page"
+    intro:
+        type: textarea
+        label: Intro
+        description: Leave empty to show the heading on its own.
+        rows: 3
+        default: ""
+    meta:
+        type: text
+        label: Meta line
+        description: A small line above the heading. Leave empty to hide it.
+        default: ""

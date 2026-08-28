@@ -1,0 +1,34 @@
+# The visual editor's contract for nav.blade.php.
+# The links come from resources/data/site.json (nav_links), so editing them
+# here changes every page at once.
+title: Header
+description: The floating pills — wordmark, links and the primary action
+fields:
+    ctaText:
+        type: text
+        label: Button text
+        default: "Start a project"
+    ctaHref:
+        type: url
+        label: Button link
+        default: "/about"
+    current:
+        type: text
+        label: Current page path
+        description: Set by each page — the matching link gets the active pill.
+        default: "/"
+    links:
+        type: repeater
+        label: Navigation links
+        add_button_label: "Add link"
+        item_label: text
+        source: site.nav_links
+        sub_fields:
+            text:
+                type: text
+                label: Label
+                default: "New link"
+            url:
+                type: url
+                label: Link
+                default: "/"

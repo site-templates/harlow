@@ -1,0 +1,11 @@
+# The visual editor's contract for sections/writing-archive.blade.php.
+# The posts come from resources/data/collections/writings.json.
+title: Writing archive
+description: Every post, newest first, with its date and category
+fields:
+    items:
+        type: repeater
+        label: Posts
+        add_button_label: "Add post"
+        item_label: title
+        source: writings

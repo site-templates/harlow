@@ -1,0 +1,18 @@
+[
+    {
+        "question": "What does a project usually cost?",
+        "answer": "Identity work starts around €18,000 and a full site sits between €24,000 and €45,000 depending on how many templates it needs. I quote a fixed price after the first conversation, not an hourly rate."
+    },
+    {
+        "question": "How long will it take?",
+        "answer": "Six to ten weeks for most of it. I run one project at a time, so the timeline you get is the timeline you get — there is nothing queued behind you."
+    },
+    {
+        "question": "Do you work with engineers, or do you build it?",
+        "answer": "Both. I build marketing sites myself and hand production apps to your team as components with the states already drawn. I would rather draw the empty state than argue about it later."
+    },
+    {
+        "question": "Can you take on something small?",
+        "answer": "Sometimes. A landing page, a type system, or a week of art direction all work well as a first project. Send the details and I will say yes or no within two days."
+    }
+]

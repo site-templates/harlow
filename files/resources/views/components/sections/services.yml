@@ -1,0 +1,30 @@
+# The visual editor's contract for sections/services.blade.php.
+# The list comes from resources/data/collections/services.json.
+title: Services
+description: The tinted band listing what you take on
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "What I can take on"
+    intro:
+        type: textarea
+        label: Intro
+        rows: 3
+        default: "Four things, done properly. If what you need is not on this list, say so anyway — I will tell you honestly whether it is mine to do."
+    items:
+        type: repeater
+        label: Services
+        add_button_label: "Add service"
+        item_label: title
+        source: services
+        sub_fields:
+            title:
+                type: text
+                label: Title
+                default: "New service"
+            description:
+                type: textarea
+                label: Description
+                rows: 3
+                default: "What it covers and what you get at the end of it."

@@ -1,0 +1,34 @@
+# The visual editor's contract for sections/process.blade.php.
+# The steps come from resources/data/collections/process.json.
+title: Process
+description: The four numbered stages a project runs through
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "How a project runs"
+    intro:
+        type: textarea
+        label: Intro
+        rows: 3
+        default: "The same four stages every time, with the dates agreed before we start. The numbers are the order things actually happen in."
+    items:
+        type: repeater
+        label: Stages
+        add_button_label: "Add stage"
+        item_label: title
+        source: process
+        sub_fields:
+            step:
+                type: text
+                label: Number
+                default: "05"
+            title:
+                type: text
+                label: Title
+                default: "New stage"
+            description:
+                type: textarea
+                label: Description
+                rows: 3
+                default: "What happens at this stage and what you get out of it."

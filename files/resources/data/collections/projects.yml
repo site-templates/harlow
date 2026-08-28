@@ -1,0 +1,19 @@
+# Column types for resources/data/collections/projects.json.
+# The Content editor and any repeater bound to this collection read them here,
+# which is why the body field is declared richtext rather than plain text.
+fields:
+    title: text
+    slug: text
+    link: url
+    category: text
+    discipline: text
+    year: text
+    duration: text
+    role: text
+    summary: textarea
+    image: image
+    imageAlt: text
+    outcome: textarea
+    quote: textarea
+    quoteAuthor: text
+    content: richtext

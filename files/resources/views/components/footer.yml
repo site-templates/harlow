@@ -1,0 +1,59 @@
+# The visual editor's contract for footer.blade.php.
+# Both link lists come from resources/data/site.json, so they stay in step
+# across every page.
+title: Footer
+description: The closing block — signoff, page links, social links and colophon
+fields:
+    signoff:
+        type: textarea
+        label: Signoff
+        description: One line under the wordmark. Say where you are and whether you are free.
+        rows: 2
+        default: "Designing quietly from Copenhagen. Open to one new project each quarter."
+    colophon:
+        type: textarea
+        label: Colophon
+        description: The small print along the bottom rule.
+        rows: 2
+        default: "Set in Bricolage Grotesque and Inter. Built to load fast and stay out of the way."
+    navigation:
+        type: repeater
+        label: Page links
+        add_button_label: "Add link"
+        item_label: text
+        source: site.footer_links
+        sub_fields:
+            text:
+                type: text
+                label: Label
+                default: "New link"
+            url:
+                type: url
+                label: Link
+                default: "/"
+    socials:
+        type: repeater
+        label: Social links
+        add_button_label: "Add profile"
+        item_label: label
+        source: site.social_links
+        sub_fields:
+            label:
+                type: text
+                label: Label
+                default: "New profile"
+            url:
+                type: url
+                label: Link
+                default: "https://example.com"
+            platform:
+                type: select
+                label: Icon
+                options:
+                    x: "X"
+                    instagram: "Instagram"
+                    linkedin: "LinkedIn"
+                    github: "GitHub"
+                    dribbble: "Dribbble"
+                    email: "Email"
+                default: "email"

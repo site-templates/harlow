@@ -1,0 +1,21 @@
+{
+    "name": "Mira Halden",
+    "nav_links": [
+        { "text": "Work", "url": "/work" },
+        { "text": "Writing", "url": "/writing" },
+        { "text": "About", "url": "/about" },
+        { "text": "Now", "url": "/now" }
+    ],
+    "footer_links": [
+        { "text": "Selected work", "url": "/work" },
+        { "text": "Writing", "url": "/writing" },
+        { "text": "About", "url": "/about" },
+        { "text": "Now", "url": "/now" }
+    ],
+    "social_links": [
+        { "label": "hello@mirahalden.com", "url": "mailto:hello@mirahalden.com", "platform": "email" },
+        { "label": "Instagram", "url": "https://instagram.com", "platform": "instagram" },
+        { "label": "LinkedIn", "url": "https://linkedin.com", "platform": "linkedin" },
+        { "label": "Dribbble", "url": "https://dribbble.com", "platform": "dribbble" }
+    ]
+}

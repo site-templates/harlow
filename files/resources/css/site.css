@@ -1,0 +1,372 @@
+/*
+    Halo — the whole design system in one file.
+
+    Inlined right after Tailwind by @vite in the layout, so everything here
+    reaches every page. The @theme block below is the ONLY place a real
+    colour or font value appears in this template: the tokens become real
+    Tailwind utilities (bg-canvas, text-ink, text-muted, border-line,
+    bg-accent, font-display) and the markup never writes a hex again.
+    Retune the palette here and the whole site moves with it.
+*/
+
+@theme {
+    /*
+        Two neutrals carry the site. Canvas is the paper; surface is the
+        one recessed plane (the services band, thumbnails, inputs). There
+        is no third — the design separates with air and hairlines instead.
+    */
+    --color-canvas: #ffffff;
+    --color-surface: #f6f6f3;
+
+    /* Type on paper. Two tiers; muted clears AA on both neutrals. */
+    --color-ink: #131311;
+    --color-muted: #6a6a63;
+
+    /* The single hairline weight in the design. */
+    --color-line: #e7e6e0;
+
+    /*
+        The lime. A spice, never a base — it is allowed on the nav pill,
+        the halo, the card arrow, the writing hover rule and the dark
+        band's button, and nowhere else. It has almost no contrast against
+        white, so it may never carry text or a thin edge on canvas:
+        --color-accent-ink is the only type that sits on it.
+    */
+    --color-accent: #c7f04b;
+    --color-accent-ink: #1c2b06;
+    --color-accent-deep: #b4de36;
+
+    /* The inverted plane: the CTA band and the footer. */
+    --color-ink-soft: #262622;
+    --color-ink-muted: #9d9d94;
+
+    --font-display: "Bricolage Grotesque", "Helvetica Neue", sans-serif;
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01";
+
+    /* One easing for everything that moves: fast in, long soft settle. */
+    --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/*
+    The display scale. Fluid between the phone and the desktop so the hero
+    never needs a breakpoint, and tight enough in the leading and the
+    tracking that a three-line headline reads as one object.
+*/
+.display-hero {
+    font-size: clamp(2.75rem, 6.5vw, 4.75rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.display-section {
+    font-size: clamp(1.875rem, 3.4vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.032em;
+}
+
+.display-sub {
+    font-size: clamp(1.375rem, 2vw, 1.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.024em;
+}
+
+/*
+    THE HALO — the one thing this template is known for.
+
+    A lime sweep turning once every 24 seconds behind the hero portrait.
+    @property makes --halo-angle a real animatable angle (a plain custom
+    property would jump rather than sweep), and the radial mask cuts the
+    filled disc down to a ring. Drawn entirely in CSS, so it costs no
+    image bytes and follows the palette for free.
+*/
+@property --halo-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.halo {
+    background: conic-gradient(
+        from var(--halo-angle),
+        transparent 0deg,
+        var(--color-accent) 60deg,
+        var(--color-accent) 110deg,
+        transparent 210deg,
+        transparent 360deg
+    );
+    mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 10px));
+    animation: halo-turn 24s linear infinite;
+}
+
+@keyframes halo-turn {
+    to {
+        --halo-angle: 360deg;
+    }
+}
+
+/*
+    The credibility strip runs edge to edge and never stops. Duplicated in
+    the markup so the second copy takes over exactly as the first leaves,
+    which is why the translation is -50%.
+*/
+.marquee-track {
+    animation: marquee-slide 42s linear infinite;
+}
+
+@keyframes marquee-slide {
+    to {
+        translate: -50% 0;
+    }
+}
+
+/*
+    Work cards. The frame owns the radius and the overflow; the photograph
+    drifts in behind it, and the lime arrow slides out of the corner.
+*/
+.card-media img {
+    transition: scale 0.8s var(--ease-spring);
+}
+
+.card:hover .card-media img {
+    scale: 1.05;
+}
+
+.card-arrow {
+    transition:
+        translate 0.4s var(--ease-spring),
+        opacity 0.3s var(--ease-spring);
+    translate: 0.75rem -0.75rem;
+    opacity: 0;
+}
+
+.card:hover .card-arrow,
+.card:focus-within .card-arrow {
+    translate: 0 0;
+    opacity: 1;
+}
+
+/*
+    Writing rows. The title steps right and a lime rule grows under it —
+    the list equivalent of the card's arrow, so the two read as one idea.
+*/
+.row-title {
+    transition: translate 0.35s var(--ease-spring);
+}
+
+.entry:hover .row-title,
+.entry:focus-within .row-title {
+    translate: 0.375rem 0;
+}
+
+.row-rule {
+    transition: scale 0.45s var(--ease-spring);
+    transform-origin: left;
+    scale: 0 1;
+}
+
+.entry:hover .row-rule,
+.entry:focus-within .row-rule {
+    scale: 1 1;
+}
+
+/*
+    Scroll reveals. IntersectionObserver flips .is-visible as each
+    [data-reveal] element arrives (see public/js/main.js). Everything is
+    gated behind the .js class the layout sets before first paint, so with
+    JavaScript switched off nothing is ever hidden. Stagger a row by
+    setting --reveal-delay.
+*/
+.js [data-reveal] {
+    opacity: 0;
+    translate: 0 12px;
+    transition:
+        opacity 0.7s var(--ease-spring),
+        translate 0.7s var(--ease-spring);
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+.js [data-reveal].is-visible {
+    opacity: 1;
+    translate: 0 0;
+}
+
+/*
+    Put .stagger on any grid or row and its children arrive in sequence
+    rather than together. Position does the work, so nothing has to be
+    computed per item in the template.
+*/
+.stagger > *:nth-child(2) {
+    --reveal-delay: 70ms;
+}
+
+.stagger > *:nth-child(3) {
+    --reveal-delay: 140ms;
+}
+
+.stagger > *:nth-child(4) {
+    --reveal-delay: 210ms;
+}
+
+.stagger > *:nth-child(5) {
+    --reveal-delay: 280ms;
+}
+
+.stagger > *:nth-child(6) {
+    --reveal-delay: 350ms;
+}
+
+/*
+    Post and case-study bodies arrive as raw HTML from the collection, so
+    they cannot carry utility classes. This is the whole prose contract —
+    every element the editor can produce is styled here.
+*/
+.prose > * + * {
+    margin-top: --spacing(6);
+}
+
+.prose p {
+    font-size: var(--text-lg);
+    line-height: --spacing(8);
+    color: var(--color-ink);
+    text-wrap: pretty;
+}
+
+.prose h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    line-height: 1.2;
+    letter-spacing: -0.028em;
+    font-weight: 600;
+    color: var(--color-ink);
+    margin-top: --spacing(14);
+}
+
+.prose h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    line-height: 1.25;
+    letter-spacing: -0.022em;
+    font-weight: 600;
+    color: var(--color-ink);
+    margin-top: --spacing(10);
+}
+
+.prose a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--color-muted);
+}
+
+@variant hover {
+    .prose a:hover {
+        text-decoration-color: var(--color-ink);
+    }
+}
+
+.prose ul,
+.prose ol {
+    padding-left: --spacing(5);
+    color: var(--color-ink);
+}
+
+.prose ul {
+    list-style-type: disc;
+}
+
+.prose ol {
+    list-style-type: decimal;
+}
+
+.prose li {
+    font-size: var(--text-lg);
+    line-height: --spacing(8);
+    margin-top: --spacing(2);
+}
+
+.prose li::marker {
+    color: var(--color-muted);
+}
+
+.prose blockquote {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    line-height: 1.35;
+    letter-spacing: -0.024em;
+    color: var(--color-ink);
+    padding-left: --spacing(6);
+    border-left: 2px solid var(--color-accent);
+}
+
+.prose blockquote p {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+.prose strong {
+    font-weight: 600;
+}
+
+.prose img {
+    width: 100%;
+    border-radius: var(--radius-2xl);
+}
+
+.prose figcaption {
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+    margin-top: --spacing(3);
+}
+
+.prose code {
+    font-size: var(--text-sm);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-sm);
+    padding-inline: --spacing(1.5);
+}
+
+.prose hr {
+    border-color: var(--color-line);
+    margin-block: --spacing(12);
+}
+
+/*
+    Reduced motion resolves every reveal to its finished state — visible,
+    in place, untransitioned — parks the halo and the marquee, and drops
+    the hover drifts. Nothing may ever be left stuck at opacity 0.
+*/
+@media (prefers-reduced-motion: reduce) {
+    .js [data-reveal] {
+        opacity: 1;
+        translate: 0 0;
+        transition: none;
+    }
+
+    .halo,
+    .marquee-track {
+        animation: none;
+    }
+
+    .card-media img,
+    .card-arrow,
+    .row-title,
+    .row-rule {
+        transition: none;
+    }
+
+    .card:hover .card-media img {
+        scale: 1;
+    }
+
+    .card-arrow {
+        translate: 0 0;
+        opacity: 1;
+    }
+
+    .row-rule {
+        scale: 1 1;
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "step": "01",
+        "title": "Read the room",
+        "description": "A week of interviews, competitor teardowns and reading whatever you have already written. I come back with what I think the real problem is."
+    },
+    {
+        "step": "02",
+        "title": "Pick a direction",
+        "description": "One direction, argued properly, with the reasoning attached. If it is wrong we find out in week two rather than week nine."
+    },
+    {
+        "step": "03",
+        "title": "Build it out",
+        "description": "The direction becomes a real system: type, colour, layout, components, and the pages that will carry the most weight."
+    },
+    {
+        "step": "04",
+        "title": "Hand it over",
+        "description": "Files, guidelines and a walkthrough recorded for whoever joins next. Two weeks of support while it goes live."
+    }
+]

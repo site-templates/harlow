@@ -1,0 +1,26 @@
+# The visual editor's contract for sections/cta.blade.php.
+title: Closing panel
+description: The dark panel that ends every page — heading, note and the email button
+fields:
+    heading:
+        type: textarea
+        label: Heading
+        rows: 2
+        default: "Got something you want made properly?"
+    intro:
+        type: textarea
+        label: Intro
+        rows: 4
+        default: "Tell me what it is, when it needs to exist, and what you have tried already. I answer every email within two days, including the ones I have to say no to."
+    buttonText:
+        type: text
+        label: Button text
+        default: "hello@mirahalden.com"
+    buttonHref:
+        type: url
+        label: Button link
+        default: "mailto:hello@mirahalden.com"
+    note:
+        type: text
+        label: Note under the button
+        default: "Currently booking from March 2026."

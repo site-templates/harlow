@@ -1,0 +1,25 @@
+# The visual editor's contract for sections/faq.blade.php.
+# The questions come from resources/data/collections/faq.json.
+title: Questions
+description: The practical questions, as native disclosures
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "The practical questions"
+    items:
+        type: repeater
+        label: Questions
+        add_button_label: "Add question"
+        item_label: question
+        source: faq
+        sub_fields:
+            question:
+                type: text
+                label: Question
+                default: "New question"
+            answer:
+                type: textarea
+                label: Answer
+                rows: 4
+                default: "The answer, in the plainest words that are still true."

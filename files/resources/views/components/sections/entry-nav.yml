@@ -1,0 +1,24 @@
+# The visual editor's contract for sections/entry-nav.blade.php.
+title: Keep reading
+description: The two ways out at the bottom of a case study or a post
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Keep going"
+    primaryText:
+        type: text
+        label: First link text
+        default: "All work"
+    primaryHref:
+        type: url
+        label: First link
+        default: "/work"
+    secondaryText:
+        type: text
+        label: Second link text
+        default: "All writing"
+    secondaryHref:
+        type: url
+        label: Second link
+        default: "/writing"

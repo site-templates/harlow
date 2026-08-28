@@ -1,0 +1,16 @@
+# The visual editor's contract for sections/marquee.blade.php.
+# The names come from resources/data/collections/clients.json.
+title: Client strip
+description: The edge-to-edge scrolling row of names under the hero
+fields:
+    items:
+        type: repeater
+        label: Names
+        add_button_label: "Add name"
+        item_label: name
+        source: clients
+        sub_fields:
+            name:
+                type: text
+                label: Name
+                default: "New client"

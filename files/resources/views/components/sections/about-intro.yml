@@ -1,0 +1,26 @@
+# The visual editor's contract for sections/about-intro.blade.php.
+title: About intro
+description: The long-form bio beside the studio photograph
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "A short version"
+    body:
+        type: textarea
+        label: First paragraph
+        rows: 6
+        default: "I have been designing for eleven years — four of them in-house at a fintech, three in a studio doing books, and the last four on my own. What has stayed constant is a preference for work that has to survive contact with reality: a label that gets printed 40,000 times, a screen someone opens while stressed, a system a junior designer has to operate after I have gone."
+    bodyTwo:
+        type: textarea
+        label: Second paragraph
+        rows: 5
+        default: "I take one project at a time. That is partly temperament and partly arithmetic — the middle stretch of a project, where a direction becomes a system, is the part that suffers when attention is split, and it is also the part that decides whether the work lasts."
+    image:
+        type: image
+        label: Photograph
+        default: "/images/studio.jpg"
+    imageAlt:
+        type: text
+        label: Photograph alt text
+        default: "A desk under a window with printed proofs and a lime mug"

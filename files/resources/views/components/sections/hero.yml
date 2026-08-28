@@ -1,0 +1,44 @@
+# The visual editor's contract for sections/hero.blade.php.
+title: Hero
+description: The opening statement — status, headline, intro, two actions, and the portrait inside the turning halo
+fields:
+    status:
+        type: text
+        label: Status
+        description: The live line beside the lime dot. Say whether you are free.
+        default: "Available for one project from March"
+    heading:
+        type: textarea
+        label: Headline
+        rows: 2
+        default: "I design brands and the things they ship."
+    intro:
+        type: textarea
+        label: Intro
+        rows: 4
+        default: "Independent designer in Copenhagen. I work with small teams on identity, product and the websites in between — one project at a time, start to finish."
+    primaryText:
+        type: text
+        label: Primary button text
+        default: "See selected work"
+    primaryHref:
+        type: url
+        label: Primary button link
+        default: "/work"
+    secondaryText:
+        type: text
+        label: Secondary link text
+        default: "Read the writing"
+    secondaryHref:
+        type: url
+        label: Secondary link
+        default: "/writing"
+    image:
+        type: image
+        label: Portrait
+        description: A square crop works best — the halo rings it.
+        default: "/images/portrait.jpg"
+    imageAlt:
+        type: text
+        label: Portrait alt text
+        default: "Mira Halden, photographed against a plaster wall"

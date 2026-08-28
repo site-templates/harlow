@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <style>
+        .mark { stroke: #131311; fill: none }
+        .core { fill: #131311 }
+        @media (prefers-color-scheme: dark) {
+            .mark { stroke: #f6f6f3 }
+            .core { fill: #f6f6f3 }
+        }
+    </style>
+    <path class="mark" d="M16 3.5a12.5 12.5 0 1 1-8.84 3.66" stroke-width="4" stroke-linecap="round"/>
+    <circle class="core" cx="16" cy="16" r="4.2"/>
+</svg>

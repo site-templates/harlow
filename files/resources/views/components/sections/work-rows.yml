@@ -1,0 +1,29 @@
+# The visual editor's contract for sections/work-rows.blade.php.
+# The projects come from resources/data/collections/projects.json — add one
+# there and it appears here, on /work, and at /project/{slug}.
+title: Selected work
+description: The alternating full-width project rows
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Selected work"
+    intro:
+        type: textarea
+        label: Intro
+        rows: 3
+        default: "Six projects from the last two years. Each one is written up properly — what the problem turned out to be, and what it cost to solve."
+    linkText:
+        type: text
+        label: Link text
+        default: "All work"
+    linkHref:
+        type: url
+        label: Link
+        default: "/work"
+    items:
+        type: repeater
+        label: Projects
+        add_button_label: "Add project"
+        item_label: title
+        source: projects

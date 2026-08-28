@@ -1,0 +1,27 @@
+# The visual editor's contract for sections/post-header.blade.php.
+# On /writing/{slug} every value comes from the matched entry in
+# resources/data/collections/writings.json — edit it there.
+title: Post header
+description: The post's title block, date and reading time
+fields:
+    category:
+        type: text
+        label: Category
+        default: ""
+    dateFormatted:
+        type: text
+        label: Date
+        default: ""
+    readTime:
+        type: text
+        label: Reading time
+        default: ""
+    title:
+        type: text
+        label: Title
+        default: "Post"
+    excerpt:
+        type: textarea
+        label: Standfirst
+        rows: 3
+        default: ""

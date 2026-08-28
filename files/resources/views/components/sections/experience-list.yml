@@ -1,0 +1,28 @@
+# The visual editor's contract for sections/experience-list.blade.php.
+# The roles come from resources/data/collections/experience.json.
+title: Experience
+description: The dated list of past roles
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Where I have been"
+    items:
+        type: repeater
+        label: Roles
+        add_button_label: "Add role"
+        item_label: role
+        source: experience
+        sub_fields:
+            period:
+                type: text
+                label: Period
+                default: "2026 — now"
+            role:
+                type: text
+                label: Role
+                default: "New role"
+            org:
+                type: text
+                label: Company or place
+                default: "Somewhere"

@@ -1,0 +1,21 @@
+# The visual editor's contract for sections/now-list.blade.php.
+# The entries come from resources/data/collections/now.json.
+title: Now list
+description: What you are working on, reading and thinking about
+fields:
+    items:
+        type: repeater
+        label: Entries
+        add_button_label: "Add entry"
+        item_label: label
+        source: now
+        sub_fields:
+            label:
+                type: text
+                label: Label
+                default: "New entry"
+            body:
+                type: textarea
+                label: Body
+                rows: 4
+                default: "What is true about this right now."

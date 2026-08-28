@@ -1,0 +1,29 @@
+# The visual editor's contract for sections/writing-list.blade.php.
+# The posts come from resources/data/collections/writings.json — add one
+# there and it appears here, on /writing, and at /writing/{slug}.
+title: Latest writing
+description: The compact list of recent posts
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Latest writing"
+    intro:
+        type: textarea
+        label: Intro
+        rows: 3
+        default: "Short pieces about how the work actually goes, published when I have something worth saying rather than on a schedule."
+    linkText:
+        type: text
+        label: Link text
+        default: "All writing"
+    linkHref:
+        type: url
+        label: Link
+        default: "/writing"
+    items:
+        type: repeater
+        label: Posts
+        add_button_label: "Add post"
+        item_label: title
+        source: writings

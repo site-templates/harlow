@@ -1,0 +1,13 @@
+# Column types for resources/data/collections/writings.json.
+# `content` is the post body, so it opens as a rich text editor rather than a
+# single-line field.
+fields:
+    title: text
+    slug: text
+    link: url
+    category: text
+    date: text
+    dateFormatted: text
+    readTime: text
+    excerpt: textarea
+    content: richtext

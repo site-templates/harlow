@@ -1,0 +1,11 @@
+# The visual editor's contract for sections/work-index.blade.php.
+# The projects come from resources/data/collections/projects.json.
+title: Work index
+description: The two-up grid of every project
+fields:
+    items:
+        type: repeater
+        label: Projects
+        add_button_label: "Add project"
+        item_label: title
+        source: projects

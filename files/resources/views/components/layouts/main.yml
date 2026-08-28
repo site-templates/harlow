@@ -1,0 +1,21 @@
+# The visual editor's contract for layouts/main.blade.php.
+# Every page renders inside this: the head, the bar and the footer.
+title: Page layout
+description: The document shell — title, description and the active nav path
+fields:
+    title:
+        type: text
+        label: Page title
+        description: Shown in the browser tab before the site name.
+        default: "Home"
+    description:
+        type: textarea
+        label: Meta description
+        description: The one-sentence summary search engines show.
+        rows: 2
+        default: ""
+    current:
+        type: text
+        label: Current page path
+        description: The matching nav link gets the active treatment.
+        default: "/"

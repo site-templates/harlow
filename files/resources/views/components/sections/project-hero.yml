@@ -1,0 +1,35 @@
+# The visual editor's contract for sections/project-hero.blade.php.
+# On /project/{slug} every value comes from the matched entry in
+# resources/data/collections/projects.json — edit it there.
+title: Project header
+description: The case study's title block and cover image
+fields:
+    category:
+        type: text
+        label: Category
+        default: ""
+    discipline:
+        type: text
+        label: Discipline
+        default: ""
+    year:
+        type: text
+        label: Year
+        default: ""
+    title:
+        type: text
+        label: Title
+        default: "Project"
+    summary:
+        type: textarea
+        label: Summary
+        rows: 3
+        default: ""
+    image:
+        type: image
+        label: Cover image
+        default: ""
+    imageAlt:
+        type: text
+        label: Cover alt text
+        default: ""
