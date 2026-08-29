@@ -1,6 +1,6 @@
 @props([
     'greeting' => 'Hello, I’m Harlow Quinn',
-    'role' => 'Designer and front-end developer',
+    'role' => 'Developer/Designer',
     'avatar' => '/images/portrait.jpg',
     'avatarAlt' => 'Harlow Quinn',
     'heading' => 'Design and front-end, in one pair of hands.',

@@ -11,7 +11,7 @@ fields:
         type: text
         label: Role
         description: The second line of the chip — what you do and where.
-        default: "Designer and front-end developer"
+        default: "Developer/Designer"
     avatar:
         type: image
         label: Avatar
