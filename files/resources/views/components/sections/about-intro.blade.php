@@ -15,8 +15,8 @@
                 <p class="mt-6 max-w-[62ch] text-lg text-pretty text-muted">{{ $bodyTwo }}</p>
             </div>
 
-            <div class="overflow-hidden rounded-[min(3vw,32px)] bg-surface" data-reveal>
-                <img src="{{ $image }}" alt="{{ $imageAlt }}" width="1200" height="800" class="aspect-4/5 w-full object-cover">
+            <div class="overflow-hidden rounded-[min(3vw,32px)] bg-surface outline-1 -outline-offset-1 outline-black/5" data-reveal>
+                <img src="{{ $image }}" alt="{{ $imageAlt }}" width="1200" height="800" loading="lazy" decoding="async" class="aspect-4/5 w-full object-cover">
             </div>
 
         </div>

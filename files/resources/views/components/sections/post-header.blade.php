@@ -10,9 +10,9 @@
         <div data-reveal>
             <p class="flex flex-wrap items-center gap-x-3 text-base text-muted sm:text-sm">
                 <span>{{ $category }}</span>
-                <span class="size-1 rounded-full bg-line" aria-hidden="true"></span>
+                <span class="size-1 rounded-full bg-muted/50" aria-hidden="true"></span>
                 <span class="tabular-nums">{{ $dateFormatted }}</span>
-                <span class="size-1 rounded-full bg-line" aria-hidden="true"></span>
+                <span class="size-1 rounded-full bg-muted/50" aria-hidden="true"></span>
                 <span>{{ $readTime }} read</span>
             </p>
             <h1 class="display-hero mt-6 max-w-[18ch] font-display font-semibold text-balance text-ink">{{ $title }}</h1>

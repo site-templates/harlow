@@ -9,7 +9,7 @@
      (nav_links), so editing them changes every page at once. Below lg the
      centre pill is replaced by a disclosure that works with JavaScript off. --}}
 <header data-bar class="fixed inset-x-0 top-0 z-50 pt-4 sm:pt-5 [&.is-stuck_.pill]:shadow-lg [&.is-stuck_.pill]:shadow-ink/5">
-    <nav class="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 sm:px-6 lg:px-8" aria-label="Main">
+    <nav class="mx-auto flex w-full max-w-6xl items-center gap-3 px-6 lg:px-8" aria-label="Main">
 
         <a href="/" aria-label="Homepage" class="pill flex items-center gap-2.5 rounded-full border border-line bg-canvas/85 py-2 pr-5 pl-2 backdrop-blur-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">
             <x-mark size="size-7 text-ink" />

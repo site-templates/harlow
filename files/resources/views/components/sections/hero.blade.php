@@ -1,10 +1,10 @@
 @props([
-    'greeting' => 'Hello, I’m Harlow Quinn',
+    'greeting' => 'Hello, I’m Harlow',
     'role' => 'Developer/Designer',
     'avatar' => '/images/portrait.jpg',
     'avatarAlt' => 'Harlow Quinn',
-    'heading' => 'Design and front-end, in one pair of hands.',
-    'intro' => 'Copenhagen-based. I work with small teams on identity, product and the websites in between — one project at a time, start to finish.',
+    'heading' => 'Design and Dev work, from start to end.',
+    'intro' => 'I work with small teams on identity, product and the websites in between — one project at a time, start to finish.',
     'primaryText' => 'See selected work',
     'primaryHref' => '/work',
     'secondaryText' => 'Read the writing',
@@ -23,13 +23,13 @@
             </span>
             <div class="text-left">
                 <p class="text-base font-medium text-ink sm:text-sm">{{ $greeting }}</p>
-                <p class="text-base text-muted sm:text-sm">{{ $role }}</p>
+                <p class="text-base text-muted sm:text-xs">{{ $role }}</p>
             </div>
         </div>
 
         <h1 class="display-hero mt-9 max-w-[19ch] font-display font-semibold text-balance text-ink sm:mt-10">{{ $heading }}</h1>
 
-        <p class="mt-7 max-w-[52ch] text-lg text-pretty text-muted sm:text-xl">{{ $intro }}</p>
+        <p class="mt-7 max-w-[47ch] text-lg text-pretty text-muted sm:text-base">{{ $intro }}</p>
 
         <div class="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             <a href="{{ $primaryHref }}" class="inline-flex items-center gap-2 rounded-full bg-ink py-3.5 pr-4 pl-6 text-base font-medium text-canvas hover:bg-ink-soft focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:text-sm">

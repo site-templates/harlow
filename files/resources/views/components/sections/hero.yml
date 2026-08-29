@@ -6,7 +6,7 @@ fields:
         type: text
         label: Greeting
         description: The first line of the chip. Introduce yourself the way you would out loud.
-        default: "Hello, I’m Harlow Quinn"
+        default: "Hello, I’m Harlow"
     role:
         type: text
         label: Role
@@ -31,7 +31,7 @@ fields:
         type: textarea
         label: Intro
         rows: 4
-        default: "Copenhagen-based. I work with small teams on identity, product and the websites in between — one project at a time, start to finish."
+        default: "I work with small teams on identity, product and the websites in between — one project at a time, start to finish."
     primaryText:
         type: text
         label: Primary button text

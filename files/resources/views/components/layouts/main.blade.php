@@ -1,12 +1,16 @@
 @props(['title' => 'Home', 'description' => '', 'current' => '/'])
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth motion-reduce:scroll-auto">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ $title }} · {{ $site->name }}</title>
     <meta name="description" content="{{ $description }}">
+
+    <meta property="og:title" content="{{ $title }} · {{ $site->name }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:type" content="website">
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
