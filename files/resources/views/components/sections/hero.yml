@@ -41,4 +41,4 @@ fields:
     imageAlt:
         type: text
         label: Portrait alt text
-        default: "Mira Halden, photographed against a plaster wall"
+        default: "Harlow Quinn, photographed against a plaster wall"

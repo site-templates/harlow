@@ -7,7 +7,7 @@
     'secondaryText' => 'Read the writing',
     'secondaryHref' => '/writing',
     'image' => '/images/portrait.jpg',
-    'imageAlt' => 'Mira Halden, photographed against a plaster wall',
+    'imageAlt' => 'Harlow Quinn, photographed against a plaster wall',
 ])
 <section class="relative overflow-hidden">
     <div class="mx-auto w-full max-w-6xl px-6 pt-10 pb-20 sm:pt-16 sm:pb-28 lg:px-8 lg:pt-20 lg:pb-32">

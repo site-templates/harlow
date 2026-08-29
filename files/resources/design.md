@@ -1,4 +1,4 @@
-# Halo — design system
+# Harlow — design system
 
 The design brief for this site. The AI reads this before editing anything, so
 a change made here changes how everything after it gets designed.

@@ -1,8 +1,8 @@
 @props([
     'heading' => 'Got something you want made properly?',
     'intro' => 'Tell me what it is, when it needs to exist, and what you have tried already. I answer every email within two days, including the ones I have to say no to.',
-    'buttonText' => 'hello@mirahalden.com',
-    'buttonHref' => 'mailto:hello@mirahalden.com',
+    'buttonText' => 'hello@harlowquinn.com',
+    'buttonHref' => 'mailto:hello@harlowquinn.com',
     'note' => 'Currently booking from March 2026.',
 ])
 <section class="pb-20 sm:pb-28 lg:pb-32">

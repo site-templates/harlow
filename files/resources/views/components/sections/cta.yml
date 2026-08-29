@@ -15,11 +15,11 @@ fields:
     buttonText:
         type: text
         label: Button text
-        default: "hello@mirahalden.com"
+        default: "hello@harlowquinn.com"
     buttonHref:
         type: url
         label: Button link
-        default: "mailto:hello@mirahalden.com"
+        default: "mailto:hello@harlowquinn.com"
     note:
         type: text
         label: Note under the button

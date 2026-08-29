@@ -1,5 +1,5 @@
 @props(['size' => 'size-8'])
-{{-- The Halo mark: an open sweep around a solid core — the hero's turning
+{{-- The Harlow mark: an open sweep around a solid core — the hero's turning
      ring reduced to a glyph. currentColor throughout, so it takes ink in the
      header and canvas in the footer with no second copy. --}}
 <svg viewBox="0 0 24 24" class="{{ $size }} shrink-0" aria-hidden="true">

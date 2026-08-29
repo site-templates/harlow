@@ -1,9 +1,9 @@
 {
-    "name": "Halo",
+    "name": "Harlow",
     "dialect": "blade",
     "description": "A quiet personal site for a designer — a turning lime halo behind the portrait, selected work in alternating full-width rows, a compact writing list, and a page for every project and post.",
     "icon": "◍",
-    "repo": "https://github.com/site-templates/halo",
+    "repo": "https://github.com/site-templates/harlow",
     "order": 28,
     "category": "portfolio",
     "theme": "light",

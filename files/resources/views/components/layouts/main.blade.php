@@ -29,8 +29,8 @@
     and a single lime that only ever marks the next thing to do.
     OWN-WORLD: white paper, near-black ink, one electric lime, a tight
     grotesque display against Inter, floating pill chrome, big soft radii.
-    STORY: who she is, what she has made, what she has been thinking about,
-    then how to reach her — in that order, once.
+    STORY: who he is, what he has made, what he has been thinking about,
+    then how to reach him — in that order, once.
     FIRST VIEWPORT: a 3/5 statement headline on bare paper at the left, the
     portrait at the right inside a lime halo that turns once every 24s.
     FORM: asymmetric portrait hero under floating chrome.

@@ -1,4 +1,4 @@
-<x-layouts.main title="Now" description="What Mira Halden is working on, reading and thinking about at the moment, and when the next project slot opens." current="/now">
+<x-layouts.main title="Now" description="What Harlow Quinn is working on, reading and thinking about at the moment, and when the next project slot opens." current="/now">
     <x-sections.page-header
         meta="Updated 14 February 2026"
         heading="What I am doing at the moment."

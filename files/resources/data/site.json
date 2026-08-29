@@ -1,5 +1,5 @@
 {
-    "name": "Mira Halden",
+    "name": "Harlow Quinn",
     "nav_links": [
         { "text": "Work", "url": "/work" },
         { "text": "Writing", "url": "/writing" },
@@ -13,7 +13,7 @@
         { "text": "Now", "url": "/now" }
     ],
     "social_links": [
-        { "label": "hello@mirahalden.com", "url": "mailto:hello@mirahalden.com", "platform": "email" },
+        { "label": "hello@harlowquinn.com", "url": "mailto:hello@harlowquinn.com", "platform": "email" },
         { "label": "Instagram", "url": "https://instagram.com", "platform": "instagram" },
         { "label": "LinkedIn", "url": "https://linkedin.com", "platform": "linkedin" },
         { "label": "Dribbble", "url": "https://dribbble.com", "platform": "dribbble" }

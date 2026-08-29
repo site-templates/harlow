@@ -1,5 +1,5 @@
 /*
-    Halo — the only JavaScript on the site.
+    Harlow — the only JavaScript on the site.
 
     Everything here is an enhancement: the layout adds a `js` class to the
     document before first paint, and site.css hides [data-reveal] elements
