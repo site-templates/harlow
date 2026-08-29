@@ -4,7 +4,7 @@
     "description": "A quiet personal site for a designer who also writes — a centred hero opening on a half-ring avatar, selected work in alternating full-width rows, a compact list of recent writing, and a page for every project and post.",
     "icon": "◍",
     "repo": "https://github.com/site-templates/harlow",
-    "order": 28,
+    "order": 31,
     "category": "portfolio",
     "theme": "light",
     "accent": "#c7f04b",
