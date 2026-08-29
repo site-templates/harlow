@@ -1,7 +1,7 @@
 {
     "name": "Harlow",
     "dialect": "blade",
-    "description": "A quiet personal site for a designer — a turning lime halo behind the portrait, selected work in alternating full-width rows, a compact writing list, and a page for every project and post.",
+    "description": "A quiet personal site for a designer who also writes — a centred hero opening on a half-ring avatar, selected work in alternating full-width rows, a compact list of recent writing, and a page for every project and post.",
     "icon": "◍",
     "repo": "https://github.com/site-templates/harlow",
     "order": 28,
