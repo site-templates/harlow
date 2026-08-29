@@ -27,7 +27,7 @@
 
     /*
         The lime. A spice, never a base — it is allowed on the nav pill,
-        the halo, the card arrow, the writing hover rule and the dark
+        the avatar ring, the card arrow, the writing hover rule and the dark
         band's button, and nowhere else. It has almost no contrast against
         white, so it may never carry text or a thin edge on canvas:
         --color-accent-ink is the only type that sits on it.
@@ -72,37 +72,38 @@
 }
 
 /*
-    THE HALO — the one thing this template is known for.
+    THE RING — the halo at badge scale.
 
-    A lime sweep turning once every 24 seconds behind the hero portrait.
-    @property makes --halo-angle a real animatable angle (a plain custom
-    property would jump rather than sweep), and the radial mask cuts the
-    filled disc down to a ring. Drawn entirely in CSS, so it costs no
-    image bytes and follows the palette for free.
+    A lime arc over roughly the top-left half of the hero avatar, blending into
+    the hairline for the rest so the circle still reads as closed. Static on
+    purpose: a turning arc at 44px reads as a loading spinner, which is the one
+    thing an avatar must never look like. Drawn in CSS, so it costs no image
+    bytes and follows the palette for free.
 */
-@property --halo-angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+.avatar-ring {
+    position: relative;
+    border-radius: 50%;
+    /* The closing half: a hairline the whole way round, so the circle still
+       reads as a circle where the lime has run out. */
+    box-shadow: inset 0 0 0 2px var(--color-line);
 }
 
-.halo {
+.avatar-ring::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    /* The lime half, faded in and out at BOTH ends — one soft end and one
+       hard end reads like a mistake rather than a decision. */
     background: conic-gradient(
-        from var(--halo-angle),
+        from 165deg,
         transparent 0deg,
-        var(--color-accent) 60deg,
-        var(--color-accent) 110deg,
-        transparent 210deg,
+        var(--color-accent) 28deg,
+        var(--color-accent) 150deg,
+        transparent 185deg,
         transparent 360deg
     );
-    mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 10px));
-    animation: halo-turn 24s linear infinite;
-}
-
-@keyframes halo-turn {
-    to {
-        --halo-angle: 360deg;
-    }
+    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
 }
 
 /*
@@ -335,7 +336,7 @@
 
 /*
     Reduced motion resolves every reveal to its finished state — visible,
-    in place, untransitioned — parks the halo and the marquee, and drops
+    in place, untransitioned — parks the marquee, and drops
     the hover drifts. Nothing may ever be left stuck at opacity 0.
 */
 @media (prefers-reduced-motion: reduce) {
@@ -345,7 +346,6 @@
         transition: none;
     }
 
-    .halo,
     .marquee-track {
         animation: none;
     }

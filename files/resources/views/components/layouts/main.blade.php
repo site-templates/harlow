@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Loads Tailwind, then the tokens, the display scale, the halo, the prose rules and the motion system -->
+    <!-- Loads Tailwind, then the tokens, the display scale, the avatar ring, the prose rules and the motion system -->
     @vite(['resources/css/site.css'])
 
     <!-- Flags JavaScript before first paint so scroll reveals never flash -->
@@ -31,9 +31,9 @@
     grotesque display against Inter, floating pill chrome, big soft radii.
     STORY: who he is, what he has made, what he has been thinking about,
     then how to reach him — in that order, once.
-    FIRST VIEWPORT: a 3/5 statement headline on bare paper at the left, the
-    portrait at the right inside a lime halo that turns once every 24s.
-    FORM: asymmetric portrait hero under floating chrome.
+    FIRST VIEWPORT: an identity chip — avatar in a half lime ring, name and
+    role — over a centred statement headline on bare paper.
+    FORM: centred type-led hero under floating chrome.
 -->
 
     <x-nav :links="$site->nav_links" :current="$current" />

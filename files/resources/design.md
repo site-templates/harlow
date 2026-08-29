@@ -33,7 +33,7 @@ and never writes a hex.
 | `ink-soft` | `#262622` | The ink button's hover, and raised areas on the dark panel. |
 | `ink-muted` | `#9d9d94` | Supporting type on the dark panel. |
 
-**The lime is rationed.** It is allowed on: the nav button, the halo, the
+**The lime is rationed.** It is allowed on: the nav button, the avatar ring, the
 work-card arrow, the writing-row hover rule, the status dot, and the closing
 panel's button. It appears nowhere else. It has almost no contrast against
 white, so it must never carry text or a thin edge on canvas.
@@ -82,12 +82,12 @@ One system, defined in `site.css`. `[data-reveal]` fades and rises 12px on an
 exponential ease-out as it enters; `.stagger` on a parent sequences its
 children. Everything is gated behind the `.js` class so nothing is hidden
 without JavaScript, and `prefers-reduced-motion: reduce` resolves every
-reveal to its finished state, parks the halo and the marquee, and drops the
-hover drifts.
+reveal to its finished state, parks the marquee, and drops the hover drifts.
 
-The signature is **the halo**: a lime conic sweep turning once every 24
-seconds behind the hero portrait. It is the only ambient motion on the site.
-Do not add a second one.
+The signature is **the ring**: the hero avatar wears a lime arc over roughly
+half its circumference, blending into the hairline for the rest. It is static
+— a turning arc at 44px reads as a loading spinner. It is the only decorative
+use of the accent on the page, and there is no second one.
 
 ## Voice
 

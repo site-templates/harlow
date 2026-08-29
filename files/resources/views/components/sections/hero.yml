@@ -1,22 +1,37 @@
 # The visual editor's contract for sections/hero.blade.php.
 title: Hero
-description: The opening statement — status, headline, intro, two actions, and the portrait inside the turning halo
+description: The opening statement — the identity chip, the headline, two actions and the availability line
 fields:
-    status:
+    greeting:
         type: text
-        label: Status
-        description: The live line beside the lime dot. Say whether you are free.
-        default: "Available for one project from March"
+        label: Greeting
+        description: The first line of the chip. Introduce yourself the way you would out loud.
+        default: "Hello, I’m Harlow Quinn"
+    role:
+        type: text
+        label: Role
+        description: The second line of the chip — what you do and where.
+        default: "Designer and front-end developer"
+    avatar:
+        type: image
+        label: Avatar
+        description: A tight square head crop — it renders at 44px inside the lime ring.
+        default: "/images/portrait.jpg"
+    avatarAlt:
+        type: text
+        label: Avatar alt text
+        default: "Harlow Quinn"
     heading:
         type: textarea
         label: Headline
+        description: The chip already says who you are, so make this about the work.
         rows: 2
-        default: "I design brands and the things they ship."
+        default: "Design and front-end, in one pair of hands."
     intro:
         type: textarea
         label: Intro
         rows: 4
-        default: "Independent designer in Copenhagen. I work with small teams on identity, product and the websites in between — one project at a time, start to finish."
+        default: "Copenhagen-based. I work with small teams on identity, product and the websites in between — one project at a time, start to finish."
     primaryText:
         type: text
         label: Primary button text
@@ -33,12 +48,8 @@ fields:
         type: url
         label: Secondary link
         default: "/writing"
-    image:
-        type: image
-        label: Portrait
-        description: A square crop works best — the halo rings it.
-        default: "/images/portrait.jpg"
-    imageAlt:
+    status:
         type: text
-        label: Portrait alt text
-        default: "Harlow Quinn, photographed against a plaster wall"
+        label: Availability
+        description: The line beside the lime dot, under the buttons.
+        default: "Available for one project from March"
