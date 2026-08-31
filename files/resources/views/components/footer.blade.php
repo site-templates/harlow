@@ -35,7 +35,7 @@
                 <ul role="list" class="mt-4 flex flex-col gap-3">
                     @foreach ($socials as $social)
                     <li class="text-base sm:text-sm">
-                        <a href="{{ $social->url }}" class="inline-flex items-center gap-2 font-normal text-muted hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">
+                        <a href="{{ $social->url }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 font-normal text-muted hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">
                             <svg viewBox="0 0 16 16" class="size-4 shrink-0 fill-current" aria-hidden="true">
                                 @if ($social->platform == 'x')
                                 <path d="M12.36 1.5h2.3l-5.02 5.74L15.5 14.5h-4.6l-3.6-4.71-4.13 4.71H.86l5.37-6.14L.66 1.5h4.72l3.26 4.3ZM11.55 13.13h1.27L4.7 2.8H3.34Z"/>
