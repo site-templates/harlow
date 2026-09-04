@@ -26,7 +26,7 @@
     <script>document.documentElement.classList.add('js')</script>
     <script src="/js/main.js" defer></script>
 </head>
-<body class="min-h-dvh bg-canvas font-sans text-ink antialiased">
+<body class="min-h-dvh bg-canvas font-sans text-ink antialiased" data-instant-navigation>
 <!--
     THESIS: one designer's site, not a studio landing page. The work is the
     argument, so the interface gets out of its way: paper, air, hairlines,
